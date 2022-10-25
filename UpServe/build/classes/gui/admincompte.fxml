@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.SupprimercompteController">
+   <children>
+      <VBox prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <AnchorPane prefHeight="356.0" prefWidth="526.0">
+               <children>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="27.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../Desktop/LOGO.png" />
+                     </image>
+                  </ImageView>
+                  <TextField fx:id="textidsupprimer" layoutX="319.0" layoutY="77.0" prefHeight="25.0" prefWidth="159.0" promptText="entrer id utilisateur" />
+                  <AnchorPane layoutX="6.0" layoutY="199.0" prefHeight="200.0" prefWidth="594.0">
+                     <children>
+                        <TableView prefHeight="200.0" prefWidth="594.0">
+                          <columns>
+                            <TableColumn fx:id="tabiduser" prefWidth="46.0" text="id user" />
+                            <TableColumn fx:id="tabname" prefWidth="48.0" text="name" />
+                              <TableColumn fx:id="tabgenre" prefWidth="45.0" text="genre" />
+                              <TableColumn fx:id="tabemail" prefWidth="54.0" text="email" />
+                              <TableColumn fx:id="tabtel" prefWidth="37.0" text="tel" />
+                              <TableColumn fx:id="tabmdp" prefWidth="43.0" text="mdp" />
+                              <TableColumn fx:id="tabregion" prefWidth="51.0" text="region" />
+                              <TableColumn fx:id="tabmenicipale" prefWidth="66.0" text="menicipale" />
+                              <TableColumn fx:id="tabprofession" prefWidth="66.0" text="profession" />
+                              <TableColumn fx:id="tabJT" prefWidth="31.0" text="JT" />
+                              <TableColumn fx:id="tabHT" prefWidth="38.0" text="HT" />
+                              <TableColumn fx:id="tabrole" prefWidth="67.0" text="role" />
+                          </columns>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                        </TableView>
+                     </children></AnchorPane>
+                  <Label layoutX="344.0" layoutY="41.0" text="supprimer utilisateur" />
+                  <Button fx:id="buttonsupprimer" layoutX="364.0" layoutY="118.0" mnemonicParsing="false" text="supprimer" />
+                  <Button fx:id="buttonmodifier" layoutX="478.0" layoutY="118.0" mnemonicParsing="false" text="modifer" />
+                  <Button fx:id="buttonafficher" layoutX="263.0" layoutY="118.0" mnemonicParsing="false" text="afficher" />
+               </children>
+            </AnchorPane>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </VBox>
+   </children>
+</AnchorPane>
